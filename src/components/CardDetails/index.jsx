@@ -8,12 +8,14 @@ import "./carddetails.css"
 class CardDetails extends Component {
     constructor(props) {
         super(props);
-        this.state = {}
+        this.state = {
+            currentMovie: this.props.location.state
+        }
     }
 
 
     render() {
-        const { Title, Year, Poster, Type } = this.props.location.state;
+        const { Title, Year, Poster, Type } = this.state.currentMovie;
         console.log(Title)
 
         return (
