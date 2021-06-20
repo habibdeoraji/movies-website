@@ -1,0 +1,15 @@
+.card-body {
+    height: 300px;
+    margin: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+.card-body:hover {
+    border: 1px solid rgb(0, 204, 255);
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+
+}
